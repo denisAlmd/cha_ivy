@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Bebê - Ivy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f0ff 0%, #e8d5ff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 40px 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #9b59b6;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .data {
+            font-size: 1.3em;
+            color: #8e44ad;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .imagem-destaque {
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 15px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .imagem-destaque img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .mensagem {
+            background: linear-gradient(135deg, #f8e8ff 0%, #f3d9ff 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border: 2px solid #d9b3ff;
+        }
+
+        .mensagem p {
+            font-size: 1.2em;
+            color: #6c3483;
+            line-height: 1.8;
+        }
+
+        .informacoes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .card-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            flex: 1 1 200px;
+            border: 2px solid #d9b3ff;
+            box-shadow: 0 5px 15px rgba(155, 89, 182, 0.2);
+        }
+
+        .card-info h3 {
+            color: #9b59b6;
+            margin-bottom: 10px;
+        }
+
+        .card-info i {
+            font-size: 2em;
+            color: #8e44ad;
+            margin-bottom: 10px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 15px rgba(155, 89, 182, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(155, 89, 182, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6c3483;
+            width: 100%;
+        }
+
+        footer a {
+            color: #9b59b6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .informacoes {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎀 Chá de Bebê da Ivy 🎀</h1>
+        <div class="data">22 de Fevereiro de 2026</div>
+        
+        <div class="imagem-destaque">
+            <img src="ivy.jpeg" alt="Convite Chá de Fraldas Ivy">
+        </div>
+
+        <div class="mensagem">
+            <p>✨ Queridos amigos e familiares, ✨</p>
+            <p>Estamos muito felizes em convidar vocês para celebrar a chegada da nossa princesinha <strong>Ivy</strong>! 💝</p>
+            <p>Sua presença será um presente especial para nós!</p>
+        </div>
+
+        <div class="informacoes">
+            <div class="card-info">
+                <div>📅</div>
+                <h3>Data</h3>
+                <p>22 de Fevereiro de 2026</p>
+                <p><small>Domingo</small></p>
+            </div>
+
+            <div class="card-info">
+                <div>⏰</div>
+                <h3>Horário</h3>
+                <p>15:00h</p>
+            </div>
+
+            <div class="card-info">
+                <div>📍</div>
+                <h3>Local</h3>
+                <p>Clique no mapa abaixo</p>
+            </div>
+        </div>
+
+        <a href="https://maps.app.goo.gl/CpVw7UHEjJSrDQmf8" target="_blank" class="botao">
+            📍 Ver Local no Mapa
+        </a>
+
+        <div style="margin-top: 20px; color: #6c3483;">
+            <p style="font-size: 1.2em;">🎁 <strong>Sugestão de presente:</strong> Fraldas(P, M, G)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>✨ Dúvidas? Entre em contato: <a href="mailto:luciane.almeida88@gmail.com">luciane.almeida88@gmail.com</a> ✨</p>
+        <p> Contato WhatsApp: <a href="https://wa.me/5551994328241" target="_blank">+55 51 99432-8241</a></p>
+    </footer>
+</body>
+</html>
